@@ -1,0 +1,22 @@
+.card {
+    
+    margin-bottom: 5px;
+}
+.courseContainer{
+    display: flex;
+}
+.firstcol{
+    text-align: left;
+}
+.secondcol{
+    text-align: left;
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+   
+    padding-right: 5px;
+    padding-bottom: 8px;
+}
+.enrollButton{
+    text-align: end;
+}
