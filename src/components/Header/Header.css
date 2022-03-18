@@ -10,3 +10,7 @@
     font-size: 2.5rem;
     padding-right: 50px;
 }
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+    
+    padding-top: 10%;
+}

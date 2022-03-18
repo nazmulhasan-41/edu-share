@@ -1,4 +1,5 @@
 import React from 'react';
+import './Cart.css';
 
 const Cart = (props) => {
     let cart = props.cart;
@@ -12,6 +13,9 @@ const Cart = (props) => {
     return (
         <div>
             <h3>Course Enrolled Summary</h3>
+            <div> Course Enrolled: {cart.length}</div>
+
+            
 
 
             <table class="table">
@@ -23,22 +27,33 @@ const Cart = (props) => {
                     </tr>
                 </thead>
                 <tbody>
-                    
+
+                {
+                cart.map(x=>
+
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
+                        <th scope="row">{parseInt(x.index)+1 }</th>
+                        <td>{x.coursename}</td>
+                        <td>{parseInt(x.cost.replace('$', '').replace(',', ''))}</td>
+                        
+                    </tr>
+                    
+                    
+                    )
+                }
+                <tr className='totalClass'>
+                        <th scope="col"></th>
+                        <td>Total Cost:</td>
+                        <td>{total}</td>
                         
                     </tr>
 
+                    
                 </tbody>
             </table>
 
 
-            <div> Course Enrolled: {cart.length}</div>
-            <div>Total Cost: {total}</div>
-
-        </div>
+              </div>
     );
 };
 

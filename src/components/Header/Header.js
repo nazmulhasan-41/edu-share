@@ -1,22 +1,22 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBookOpen } from '@fortawesome/free-solid-svg-icons';
+import { faBookOpen } from '@fortawesome/free-solid-svg-icons';
 import './Header.css';
 import img from './image.jpg';
 const Header = () => {
     return (
         <div>
 
-<div className="jumbotron">
-    <img src={img}  width="100%" height="400"/>
-     
-</div>
+            <div className="jumbotron">
+                <img src={img} width="100%" height="400" />
+
+            </div>
 
             <nav className='navbar sticky-top navbar-light bg-light'>
                 <div className="nav nav-tabs" id="nav-tab" role="tablist">
                     <div className='fontclass'>
                         <FontAwesomeIcon icon={faBookOpen} />
-                        
+
 
                     </div>
                     <h5 className="display-6">EduShare</h5>
@@ -29,12 +29,12 @@ const Header = () => {
                 </div>
             </nav>
             <div className="tab-content" id="nav-tabContent">
-                <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">..dsddd.</div>
-                <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">.ffffff..</div>
-                <div className="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">.ggggggg..</div>
+                <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"></div>
+                <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"></div>
+                <div className="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"></div>
             </div>
 
-            
+
 
         </div>
     );
